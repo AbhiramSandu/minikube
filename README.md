@@ -12,14 +12,23 @@ mv ./kubectl /usr/bin/kubectl
 
 
 minikube start --vm-driver=none 
-
-kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.10 --port=8080 \
+# to create pod/deployment
+kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.10 --port=8080 \ 
+# to crate service/ to exposed
+# specify the any port or it will take the default port
 kubectl expose deployment hello-minikube --type=NodePort \
 curl $(minikube service hello-minikube --url) \
+# find the running pods
 kubectl get pod 
+# find the deployments
+kubectl get pod 
+# to find the services
+kubectl get svc
 
 kubectl get nodes \
+# it will give the service details 
 curl $(minikube service hello-minikube --url) \
+
 kubectl delete services hello-minikube \
 kubectl delete deployment hello-minikube \
 minikube stop 
