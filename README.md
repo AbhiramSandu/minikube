@@ -60,3 +60,11 @@ Create doployment.yaml file
 nginx-svc.yaml
 to check
 curl $(minikube service nginx-svc --url)
+
+
+#------------------------
+https://github.com/kubernetes/kubernetes/blob/master/cluster/addons/addon-manager/namespace.yaml
+-------------commands---------------
+https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+
+https://www.blazemeter.com/blog/how-to-setup-scalable-jenkins-on-top-of-a-kubernetes-cluster
