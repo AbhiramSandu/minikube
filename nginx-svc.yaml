@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: nginx-svc
   labels:
-    run: my-nginx
+    app: nginx
 spec:
   type: NodePort
   ports:
