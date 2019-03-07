@@ -21,7 +21,7 @@ curl $(minikube service hello-minikube --url) \
 # find the running pods
 kubectl get pod 
 # find the deployments
-kubectl get pod 
+kubectl get deployment 
 # to find the services
 kubectl get svc
 
