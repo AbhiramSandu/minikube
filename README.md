@@ -42,6 +42,21 @@ rm -rf ~/.minikube
  create the nginx-deployment.yaml from above site
 `https://kubernetes.io/docs/concepts/services-networking/`
 `https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/`
+
+# steps to create deployment file and service file , execute and check
+Create doployment.yaml file 
+ sudo kubectl create -f nginx-deployment.yaml
+   sudo kubectl get pod
+   sudo kubectl get deployment
+ Create service.yaml file 
+ sudo kubectl create -f   nginx-svc.yaml
+  sudo kubectl get pod
+   sudo kubectl get deployment
+   sudo kubectl get svc
+   To connect the service internally 
+   
+   curl $(minikube service nginx-svc --url)
+
 nginx-svc.yaml
 to check
 curl $(minikube service nginx-svc --url)
