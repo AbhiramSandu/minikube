@@ -38,8 +38,10 @@ minikube delete \
 rm -rf ~/.minikube
 
 # important references
-https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+`https://kubernetes.io/docs/concepts/workloads/controllers/deployment/`
  create the nginx-deployment.yaml from above site
-https://kubernetes.io/docs/concepts/services-networking/
-https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/
+`https://kubernetes.io/docs/concepts/services-networking/`
+`https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/`
 nginx-svc.yaml
+to check
+curl $(minikube service nginx-svc --url)
